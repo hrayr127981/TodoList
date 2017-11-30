@@ -9,6 +9,7 @@ todoRouter.get('/', (req, res) => {
 
 });
 todoRouter.post('/', (req, res) => {
+    console.log(req.body)
     let todo ={
         content: req.body.content,
         date: req.body.date,
